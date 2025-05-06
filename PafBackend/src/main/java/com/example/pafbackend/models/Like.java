@@ -3,6 +3,8 @@ package com.example.pafbackend.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+//like model
+
 @Document(collection = "likes")
 public class Like {
     @Id

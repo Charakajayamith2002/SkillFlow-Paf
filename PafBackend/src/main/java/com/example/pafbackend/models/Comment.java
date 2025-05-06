@@ -13,7 +13,7 @@ public class Comment {
     private String commentText;
     private Date timestamp;
 
-
+    //constructor 
 
     public Comment() {}
 
