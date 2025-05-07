@@ -101,11 +101,11 @@ const UserProfileModal = () => {
     borderRadius: "8px",
     backgroundColor: "#f9f9f9"
   };
-
+//add a function to close modal
   const closeModal = () => {
     state.profileModalOpend = false;
   };
-
+//add a function to handle update
   const handleUpdate = async (values) => {
     try {
       setUpdateLoading(true);
@@ -141,7 +141,7 @@ const UserProfileModal = () => {
     navigate("/");
     message.success("Logged out successfully");
   };
-
+//add a function to handle files
   const handleFileChange = async (info) => {
     if (info.file) {
       try {

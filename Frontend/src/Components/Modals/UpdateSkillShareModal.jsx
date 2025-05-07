@@ -39,6 +39,7 @@ const UpdateSkillShareModal = () => {
     }
   }, [snap.seletedSkillShareToUpdate, form]);
 
+  //
   const handleSubmit = async () => {
     try {
       setLoading(true);
@@ -63,12 +64,12 @@ const UpdateSkillShareModal = () => {
       state.updateSkillShareOpened = false;
       state.seletedSkillShareToUpdate = null;
 
-      // Show success message
+      //show message as sucess
       message.success("Skill Share updated successfully!");
     } catch (error) {
       console.error("Error updating Skill Share:", error);
       
-      // Show error message
+      // Show message as error
       message.error("Failed to update Skill Share. Please try again.");
     } finally {
       setLoading(false);
@@ -117,7 +118,7 @@ const UpdateSkillShareModal = () => {
     
     return false; // Prevent default upload behavior
   };
-
+//add a function to validate video duration
   const validateVideoDuration = (file) => {
     return new Promise((resolve) => {
       const video = document.createElement('video');
@@ -135,7 +136,7 @@ const UpdateSkillShareModal = () => {
   const removeMediaFile = (uid) => {
     setMediaFiles(prev => prev.filter(file => file.uid !== uid));
   };
-
+//add a function to media preview
   const renderMediaPreview = () => {
     return (
       <>

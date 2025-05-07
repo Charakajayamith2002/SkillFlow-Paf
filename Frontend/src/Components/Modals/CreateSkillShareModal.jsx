@@ -26,7 +26,7 @@ const themeColors = {
   success: "#28A745", // Balanced green for success messages
   gradient: "linear-gradient(135deg, #FF6B35 0%, #FF8F1C 100%)", // Light, engaging orange gradient
 };
-
+//add validation to create skill share modal
 const CreateSkillShareModal = () => {
   const snap = useSnapshot(state);
   const [loading, setLoading] = useState(false);
