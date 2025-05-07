@@ -105,7 +105,7 @@ const UserProfileModal = () => {
   const closeModal = () => {
     state.profileModalOpend = false;
   };
-
+//add a function to handle update
   const handleUpdate = async (values) => {
     try {
       setUpdateLoading(true);
