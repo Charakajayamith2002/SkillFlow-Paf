@@ -117,7 +117,7 @@ const UpdateSkillShareModal = () => {
     
     return false; // Prevent default upload behavior
   };
-
+//add a function to validate video duration
   const validateVideoDuration = (file) => {
     return new Promise((resolve) => {
       const video = document.createElement('video');
