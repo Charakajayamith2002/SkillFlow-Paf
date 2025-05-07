@@ -95,7 +95,7 @@ const UpdateSkillShareModal = () => {
           return false;
         }
       }
-      
+      //validate upload file type
       const url = await uploader.uploadFile(file, "posts");
       
       setMediaFiles(prev => [...prev, {
