@@ -135,7 +135,7 @@ const UpdateSkillShareModal = () => {
   const removeMediaFile = (uid) => {
     setMediaFiles(prev => prev.filter(file => file.uid !== uid));
   };
-
+//add a function to media preview
   const renderMediaPreview = () => {
     return (
       <>
